@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './events.css';
+import RegistrationForm from './register';
+import Modal from './modal';
 
 const EventCard = (props) => {
   const { imageUrl, altText, heading, teaser, description, date, time, venue, registrationLink, material } = props;
 
+  // State to manage the visibility of the registration form
+  const [showRegistrationForm, setShowRegistrationForm] = useState(false);
+
+  // Event handler to toggle the visibility of the registration form
+  const toggleRegistrationForm = () => {
+    setShowRegistrationForm(!showRegistrationForm);
+  };
+
+  // Function to handle the closing of the registration form
+  const handleCloseRegistrationForm = () => {
+    setShowRegistrationForm(false);
+  };
+
   return (
     <div className="event-card">
       <img src={imageUrl} alt={altText} className="event-image" />
-      
+
       <h2 className="event-heading">{heading}</h2>
       <h4 className="event-teaser">{teaser}</h4>
       <p className="event-description">{description}</p>
@@ -27,14 +42,20 @@ const EventCard = (props) => {
         </p>
         <p>
           <strong>Registration:</strong>{' '}
-          <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+          <button className='register' onClick={toggleRegistrationForm}>
             Register Now
-          </a>
+          </button>
         </p>
         <p>
           <strong>Material:</strong> {material}
         </p>
       </div>
+
+      {showRegistrationForm && (
+        <Modal onClose={handleCloseRegistrationForm}>
+          <RegistrationForm onClose={handleCloseRegistrationForm} />
+        </Modal>
+      )}
     </div>
   );
 };

@@ -65,3 +65,22 @@
     background-color: white;
     color: black;
   }
+  .register{
+    color: "black";
+    background-color: transparent;
+    border-radius: 8px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style:solid;
+    border-width: 2px;
+    margin-left: 2.5px;
+    border-color:black;
+  }
+  .event-card:hover .register {
+    border-color: white;
+    color: white;
+  }
+  .register:hover{
+    transform: scale(1.05);
+  }
