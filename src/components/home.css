@@ -1,0 +1,35 @@
+.top-section {
+    background-color: #aaadb2; /* Change the background color to your preferred color */
+    color: white; /* Text color */
+    padding: 20px; /* Adjust the padding as needed */
+    text-align: center;
+  }
+  
+  .top-section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .top-section-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .login-button {
+    background-color:transparent; /* Button background color */
+    color:white; /* Button text color */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+
+  }
+  
+  .login-button:hover {
+    transform: scale(1.1);
+  }

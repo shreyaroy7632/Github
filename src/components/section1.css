@@ -1,0 +1,29 @@
+/* section1.css */
+
+.top {
+    padding:40px; ;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .sort-button {
+    padding-left:7px;
+    padding-right: 7px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border-width: 2.5px;
+    background-color: transparent;
+    height: 3rem;
+  }
+  
+  .sort-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .eve{
+    font-size:2.7rem;
+    font-weight:600;
+  }

@@ -1,0 +1,53 @@
+/* .foot{
+    background-color: black;
+    color:white;
+    margin-bottom: -4000px;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.instagram{
+    height:40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left:40px;
+}
+.logo{
+    height:100px;
+    margin-left:-20px ;
+    margin-left: -20px;
+}
+.contact{
+    color:white;
+    font-size: 40px;
+    margin-bottom: -500px;
+    margin-left:45px;
+} */
+/* Footer.css */
+
+.foot {
+    background-color: #020000;
+    color: #fff;
+    padding: 50px;
+    
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
